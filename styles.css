@@ -1,0 +1,312 @@
+/* Pookie Website Styles - Kawaii Aesthetic */
+
+:root {
+    --bg-cream: #F7F3EF;
+    --bg-white: #FFFFFF;
+    --accent-rose: #FFB3BF;
+    --accent-rose-dark: #E5909C;
+    --text-brown: #4A2E2B;
+    --text-brown-light: #4A2E2B99;
+    --shadow-color: rgba(74, 46, 43, 0.12);
+    --card-peach: #FFE1D6;
+    --card-sage: #D9ECD9;
+    --card-lavender: #F0E5F5;
+    --card-coral: #FFDDE0;
+    --heart-color: #FFBFCC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-cream);
+    color: var(--text-brown);
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(180deg, var(--bg-cream) 0%, #FFF8F5 100%);
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.app-icon {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 24px;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px var(--shadow-color);
+}
+
+.app-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-brown);
+    margin-bottom: 8px;
+}
+
+.tagline {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent-rose-dark);
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: var(--text-brown-light);
+    margin-bottom: 32px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* iOS App Store Button */
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #000000;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.download-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.download-btn .apple-icon {
+    font-size: 28px;
+    line-height: 1;
+}
+
+.download-btn .btn-text {
+    text-align: left;
+}
+
+.download-btn .btn-text-small {
+    font-size: 10px;
+    font-weight: 400;
+    display: block;
+    opacity: 0.9;
+}
+
+.download-btn .btn-text-large {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin-top: -2px;
+}
+
+/* Screenshots Section */
+.screenshots {
+    padding: 80px 20px;
+    background-color: var(--bg-white);
+}
+
+.screenshots h2,
+.features h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-brown);
+    margin-bottom: 48px;
+}
+
+.screenshots-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: auto;
+    padding: 20px 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.screenshot-wrapper {
+    flex-shrink: 0;
+    width: 220px;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 12px 32px var(--shadow-color);
+    background: var(--bg-cream);
+    transition: transform 0.3s ease;
+}
+
+.screenshot-wrapper:hover {
+    transform: translateY(-8px);
+}
+
+.screenshot-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Features Section */
+.features {
+    padding: 80px 20px;
+    background-color: var(--bg-cream);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: var(--bg-white);
+    border-radius: 20px;
+    padding: 28px 20px;
+    text-align: center;
+    box-shadow: 0 4px 16px var(--shadow-color);
+    transition: transform 0.2s ease;
+}
+
+.feature-card:nth-child(1) { background: var(--card-peach); }
+.feature-card:nth-child(2) { background: var(--card-sage); }
+.feature-card:nth-child(3) { background: var(--card-lavender); }
+.feature-card:nth-child(4) { background: var(--card-coral); }
+
+.feature-card:hover {
+    transform: translateY(-4px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.feature-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-brown);
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    font-size: 0.9rem;
+    color: var(--text-brown-light);
+}
+
+/* Footer */
+footer {
+    background: var(--bg-white);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-brand {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--accent-rose-dark);
+    margin-bottom: 16px;
+}
+
+.footer-links {
+    margin-bottom: 16px;
+}
+
+.footer-links a {
+    color: var(--text-brown);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-rose-dark);
+}
+
+.footer-links .divider {
+    color: var(--text-brown-light);
+    margin: 0 12px;
+}
+
+.copyright {
+    font-size: 0.85rem;
+    color: var(--text-brown-light);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .tagline {
+        font-size: 1.1rem;
+    }
+
+    .screenshots-container {
+        justify-content: flex-start;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .screenshot-wrapper {
+        width: 180px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: auto;
+        padding: 60px 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .app-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .screenshot-wrapper {
+        width: 160px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
